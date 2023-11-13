@@ -41,7 +41,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
+    distance: '80px',
     duration: 3000,
     delay: 300,
     reset: true
@@ -77,6 +77,9 @@ function deleteRoleText() {
 updateRoleText();
 setInterval(updateRoleText, 250);
 
+
+// country api 
+
 var select = document.getElementById("Country");
 
 fetch("https://restcountries.com/v3.1/all")
@@ -96,19 +99,19 @@ fetch("https://restcountries.com/v3.1/all")
         // Add options to the select element based on the sorted data
         data.forEach(country => {
             var option = document.createElement("option");
-            option.value = country.cca2.toLowerCase(); // Use country code as value
+            option.value = country.cca2.toLowerCase(); 
             option.text = country.name.common;
             select.add(option);
         });
     })
     .catch(error => console.error("Error fetching country data:", error));
 
-    var stateSelect = document.getElementById("state");
+
 
    
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text ' ,{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img ',{delay: 400}); 
+sr.reveal('.home__social-icon ,.box',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
