@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBurst Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="quiz-container">
+            <div class="quiz-number badge badge-dark">1 / 5</div>
+            <div class="quiz-list-body" id="question1">
+                <div class="quiz-list alert alert-primary">
+                    Q .<span> What is the primary color of the Google logo?</span>
+                </div>
+                <div class="select  rounded">
+                    <ul class="options list-group">
+                        <li  class="component list-group-item">
+                            <input id="first1" type="radio" value="1" value="1" name="quizOption"> Red
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="second1" type="radio" value="2" value="2" name="quizOption"> Blue
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="third1" type="radio" value="3" name="quizOption" value="3"> Green
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="fourth1" type="radio" value="4" name="quizOption" value="4"> Yellow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-list-body" id="question2">
+                <div class="quiz-list alert alert-primary">
+                    Q .<span> What is the primary color of the Google logo?</span>
+                </div>
+                <div class="select  rounded">
+                    <ul class="options list-group">
+                        <li  class="component list-group-item">
+                            <input id="first2" type="radio" value="1" name="quizOption"> Red
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="second2" type="radio" value="2" name="quizOption"> Blue
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="third2" type="radio" value="3" name="quizOption"> Green
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="fourth2" type="radio" value="4" name="quizOption"> Yellow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-list-body" id="question3">
+                <div class="quiz-list alert alert-primary">
+                    Q .<span> What is your Name?</span>
+                </div>
+                <div class="select  rounded">
+                    <ul class="options list-group">
+                        <li  class="component list-group-item">
+                            <input id="first3" value="1" type="radio" name="quizOption"> Red
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="second3"  value="2" type="radio" name="quizOption"> Blue
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="third3"  value="3" type="radio" name="quizOption"> Green
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="fourth3" value="4" type="radio" name="quizOption"> Yellow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-list-body" id="question4">
+                <div class="quiz-list alert alert-primary">
+                    Q .<span> Who is the Prime Minister of India?</span>
+                </div>
+                <div class="select rounded">
+                    <ul class="options list-group">
+                        <li  class="component list-group-item">
+                            <input id="first4" type="radio" value="1"  name="quizOption"> Red
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="second4" type="radio"  value="2" name="quizOption"> Blue
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="third4" type="radio"  value="3" name="quizOption"> Green
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="fourth4" type="radio" value="4"  name="quizOption"> Yellow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-list-body" id="question5">
+                <div class="quiz-list alert alert-primary">
+                    Q .<span> Who is the president of India?</span>
+                </div>
+                <div class="select rounded">
+                    <ul class="options list-group">
+                        <li  class="component list-group-item">
+                            <input id="first5" value="1" type="radio" name="quizOption"> Red
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="second5" value="2" type="radio" name="quizOption"> Blue
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="third5" value="3" type="radio" name="quizOption"> Green
+                        </li>
+                        <li  class="component list-group-item">
+                            <input id="fourth5" value="4" type="radio" name="quizOption"> Yellow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-list-body" id="question6" style="display: none;">
+                <div class="quiz-list alert alert-primary">
+                    <span> Score</span>
+                </div>
+                <div class="score">
+                    Your score is <span class="TotalScore"></span>
+                </div>
+            </div>
+
+
+            <div class="quiz-functions">
+                <button class="btn btn-secondary quiz-prev" disabled>&#x2190; Previous</button>
+                <button class="btn btn-primary btn-3d"  type="button" style="display: none;">SUBMIT</button>
+                <button class="btn btn-secondary quiz-next">&#x2192; Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentQuestion = 1;
+            let totalQuestions = 5;
+
+            function showQuestion(questionNumber) {
+                let quizBodies = document.querySelectorAll('.quiz-list-body');
+
+                quizBodies.forEach((body, index) => {
+                    if (index + 1 === questionNumber) {
+                        body.style.display = 'flex';
+                    } else {
+                        body.style.display = 'none';
+                    }
+                });
+            }
+
+            function updateNavigationButtons() {
+                document.querySelector('.quiz-prev').disabled = currentQuestion === 1;
+                document.querySelector('.quiz-next').disabled = currentQuestion === totalQuestions;
+                if(currentQuestion == totalQuestions)
+                {document.querySelector('.btn-3d').style.display="block";}
+                else{
+                {document.querySelector('.btn-3d').style.display="none";}
+                }
+            }
+
+            document.querySelector('.quiz-prev').addEventListener('click', function () {
+                if (currentQuestion > 1) {
+                    currentQuestion--;
+                    document.querySelector('.quiz-number').innerText = currentQuestion + ' / ' + totalQuestions;
+                    showQuestion(currentQuestion);
+                    updateNavigationButtons();
+                }
+            });
+
+            document.querySelector('.quiz-next').addEventListener('click', function () {
+                if (currentQuestion < totalQuestions) {
+                    currentQuestion++;
+                    document.querySelector('.quiz-number').innerText = currentQuestion + ' / ' + totalQuestions;
+                    showQuestion(currentQuestion);
+                    updateNavigationButtons();
+                }
+            });
+
+            let score = [0,0,0,0,0];
+            let answer= [ 1, 2 ,3 ,2 ,1];
+
+            let quizOptions = document.getElementsByName('quizOption');
+
+            quizOptions.forEach(function (option) {
+                option.addEventListener('click', function () {
+
+                    let selectedOptionValue = (option.value);
+                    console.log(selectedOptionValue)
+
+                    if (selectedOptionValue == answer[currentQuestion - 1]) {
+                        // score+=2;
+                        score[currentQuestion-1]=1;
+                        console.log('Correct!');
+                        console.log(score);
+                    } else {
+                        score[currentQuestion-1]=0;
+                        console.log('Incorrect!');
+                        console.log(score);
+
+                    }
+                });
+            });
+
+            function showResult() {
+                let answer = [1, 2, 3, 2, 1];
+                let totalQuestions = 5;
+                
+                document.querySelectorAll('.quiz-list-body').forEach((body, index) => {
+                    if (index + 1 === totalQuestions + 1) {
+                        body.style.display = 'block'; 
+                    } else {
+                        body.style.display = 'none'; 
+                    }
+                });
+
+                let sums = 0;
+                for(  let i = 0; i < totalQuestions;i++){
+                    sums= sums+ score[i];
+                }
+
+                document.querySelector('.TotalScore').innerText = sums + '/' + totalQuestions;
+            }
+
+            var submit = document.querySelector(".btn-3d");
+            submit.addEventListener("click", showResult);
+
+
+            showQuestion(currentQuestion);
+            updateNavigationButtons();
+        });
+
+    </script>
+</body>
+
+</html>
